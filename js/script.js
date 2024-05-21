@@ -1,6 +1,10 @@
 // URL del archivo JSON alojado en línea
 const productosData = 'https://s-ol3.github.io/4lura-4luraGeek/assets/data/products.json';
 
+// Contenido del archivo JSON como un objeto JavaScript....error cors
+//const productosData = 'assets/data/products.json'; // Ruta al archivo JSON local
+
+
 // Función para mostrar los productos en la página
 function mostrarProductos() {
   fetch(productosData)
