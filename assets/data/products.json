@@ -46,5 +46,11 @@
         "name": "Crecimiento",
         "price": 250,
         "img": "https://cdn-icons-png.freepik.com/256/5430/5430072.png"
+    },
+    {
+        "id": 9,
+        "name": "Ojetivo",
+        "price": 550,
+        "img": "https://cdn-icons-png.freepik.com/256/5430/5430921.png"
     }
 ]
