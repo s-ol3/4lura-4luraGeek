@@ -26,81 +26,73 @@
 </head>
 
 <body>
+
   <header>
-    <!-- <h1>♡♡♡ ♥♥♥ ▝▞ ▝▞ ▝▞AluraGeek</h1> -->
-    <!-- <h1>♥♥♥ AluraGeek</h1> -->
     <span><img src="./assets/img/nav-sinfondo.png" alt=""></span>
     <span><img src="./assets/img/nav-sinfondo.png" alt=""></span>
     <span><img src="./assets/img/nav-sinfondo.png" alt=""></span>
-      <h1>‎ AluraGeek</h1>
+    <h1>‎ AluraGeek</h1>
     </span>
   </header>
-  <main>
 
+  <main class="background-main">
+    <!--imagenes https://www.freepik.es/icono/notas-adhesivas_5430075#fromView=search&page=1&position=16&uuid=9ff0f5e9-6cae-4099-a997-637eee7fc037 -->
+    <!-- --------------------------------------------------- -->
     <section class="container-principal">
-      <!-- https://www.freepik.es/icono/notas-adhesivas_5430075#fromView=search&page=1&position=16&uuid=9ff0f5e9-6cae-4099-a997-637eee7fc037 -->
       <h2>Mis Productos</h2>
       <!-- div en js, trayendo datos del json -->
-      <div class="container-products" id="productos-container"></div>       
+      <div class="container-products" id="productos-container"></div>
     </section>
-
+    <!-- --------------------------------------------------- -->
     <section class="container-formulario">
       <h2>Agregar Producto</h2>
       <form class="formulario" action="#" method="POST">
         <div class="inputs-form">
           <div>
+            <!-- ---- -->
             <div class="input-name">
               <div class="input-box">
                 <input type="text" name="name" placeholder="Nombre del producto..." title="Nombre"
                   pattern="^[a-zA-ZÀ-ÿ\s]+$" class="input" maxlength="15" required />
               </div>
             </div>
-
+            <!-- ---- -->
             <div class="input-price">
               <div class="input-box">
                 <input type="text" name="price" placeholder="Precio..." title="Precio" pattern="^\d{1,4}(\.\d)?$"
-                  class="input" maxlength="5" required />
+                  class="input" maxlength="8" required />
               </div>
             </div>
-
+            <!-- ---- -->
             <div class="input-image">
               <div class="input-box">
                 <input type="url" name="image" placeholder="Enlace de la imagen..." title="Enlace de la imagen"
                   class="input" required />
               </div>
             </div>
+            <!-- ---- -->
           </div>
         </div>
-
         <div class="buttons">
           <button id="form-btn-add" class="btn-add" type="submit">Agregar</button>
           <button id="form-btn-reset" class="btn-reset" type="reset">Limpiar</button>
         </div>
       </form>
     </section>
-
   </main>
 
-  
   <footer>
-    <p>© 2024. Soledad Fretes</p>
+    <p>© 2024 sf</p>
     <div class="redes1">
-      <a class="" href="https://www.linkedin.com/" target="_blank">
-        <i class="bi bi-linkedin"></i></a>
-      <a class="" href="https://github.com/" target="_blank">
-        <i class="bi bi-github"></i></a>
-      <a class="" href="mailto:sol@gmail.com/" target="_blank">
-        <i class="bi bi-envelope-fill"></i></a>
-      <a class="" href="https://www.instagram.com/" target="_blank">
-        <i class="bi bi-instagram"></i></a>
-      <a class="" href="https://dribbble.com/" target="_blank">
-        <i class="bi bi-dribbble"></i></a>
+      <a class="" href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <a class="" href="https://github.com/" target="_blank"><i class="bi bi-github"></i></a>
+      <a class="" href="mailto:sol@gmail.com/" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+      <a class="" href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a class="" href="https://dribbble.com/" target="_blank"><i class="bi bi-dribbble"></i></a>
     </div>
   </footer>
 
-<script src="./js/script.js"></script>
-
-
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
