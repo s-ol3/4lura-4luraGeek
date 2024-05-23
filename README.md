@@ -5,7 +5,7 @@
  
 </div>
 
-🔗 [s-ol3.github.io/4lura-4luraGeek/](https://s-ol3.github.io/4lura-4luraGeek/ )
+🔗 [s-ol3.github.io/4lura-4luraGeek](https://s-ol3.github.io/4lura-4luraGeek/ )
 
 
 <br>
