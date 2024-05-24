@@ -106,6 +106,7 @@ span img {
   background-color: #d9d9d991;
 
   /* para el desplazamiento en vertical de solo el container productos */
+  /* '''''''''''''''''''''''' */
   height: 55vh;
   min-height: 67vh;
   overflow-y: auto;
@@ -125,8 +126,9 @@ span img {
   height: fit-content;
   max-width: 200px;
   border-radius: 20px;
-  background-color: grey;
+  /* background-color: grey; */
   /* background-color: #bdbdbd; */
+  background-color: #808080bf;
   transition: all ease-in .3s;
 }
 
@@ -318,13 +320,14 @@ footer p {
 
 
 
-
+/* '''''''''''''''''''''''' */
 @media (height < 1024px) {
   .container-principal {
     height: 55vh;
     min-height: 60vh;
   }
 }
+/* '''''''''''''''''''''''' */
 /* @media (width > 1240px) { */
   @media only screen and (max-width: 1240px) and (max-height: 1024px) {
   .container-principal {
@@ -332,17 +335,24 @@ footer p {
     min-height: 60vh;
   }
 }
+/* '''''''''''''''''''''''' */
+
+
+
 
 @media (width < 1240px) {
   main {
     align-items: center;
   }
 
+
+  /* '''''''''''''''''''''''' */
   .container-principal {
     min-height: fit-content;
     height: 69vh;
-    /* --------------------------------------------- */
   }
+  /* '''''''''''''''''''''''' */
+
 
   .container-products {
     height: fit-content;
@@ -410,10 +420,10 @@ html::-webkit-scrollbar-thumb {
 
 
 
-
+/* '''''''''''''''''''''''' */
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
 }
-
+/* '''''''''''''''''''''''' */
