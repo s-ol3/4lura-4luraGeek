@@ -1,6 +1,43 @@
 const productosData = 'https://4lurageek-api.vercel.app/product';
 //const productosData = 'https://s-ol3.github.io/4lura-4luraGeek/assets/data/products.json';
 
+/*
+ 
+// función para mostrar los productos en la página desde la api/json, apago, esta abajo de nuevo, pero funciona, hecho con curso alura 'js consumiendo y manejando datos de una API'
+function mostrarProductos() {
+  fetch(productosData)
+    .then(response => response.json())
+    .then(data => {
+      const productosContainer = document.getElementById('productos-container');
+      data.forEach(producto => {
+        // productoHTML = cada tarjeta de producto, ${producto.img} trae el link de la imagen cargado en el json
+        const productoHTML = `
+        <div class="product-card">
+          <img class="product-img" src="${producto.img}" alt="${producto.name}">
+          <h4 class="product-name">${producto.name}</h4>
+          <div class="product-content-box">
+            <div class="product-content">
+              <h3 class="product-price">$${producto.price}</h3>
+              <div class="splitters"></div>
+              <button><i class="fa-solid fa-trash"></i></button>
+            </div>
+          </div>
+        </div>    
+        `;
+        // igual a 'productosContainer.innerHTML = productosContainer.innerHTML + productoHTML' (todos los productos + el siguiente producto)
+        productosContainer.innerHTML += productoHTML;
+      });
+    })
+    .catch(error => console.error('Error al obtener los productos:', error));
+} 
+
+// llama a la función para mostrar los productos al cargar la página
+window.addEventListener('DOMContentLoaded', mostrarProductos);
+
+*/
+
+
+
 
 // variable para almacenar los productos
 let productos = [];
