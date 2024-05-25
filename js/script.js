@@ -29,6 +29,8 @@ function mostrarProductos() {
   });
 }
 
+
+/* 
 // función para agregar un producto
 function agregarProducto(event) {
   event.preventDefault(); // evitar el envío del formulario
@@ -55,6 +57,76 @@ function agregarProducto(event) {
   // limpiar el formulario
   document.querySelector('form').reset();
 }
+  */
+ 
+
+// ------------------------------------------------------------------------con alertas
+function agregarProducto(event) {
+  event.preventDefault(); // evitar el envío del formulario
+
+  // obtener los valores del formulario
+  const nombre = document.querySelector('input[name="name"]').value.trim();
+  const precio = parseFloat(document.querySelector('input[name="price"]').value);
+  const imagen = document.querySelector('input[name="image"]').value.trim();
+
+  // validar si el formulario está vacío completamente
+  if (nombre === '' && isNaN(precio) && imagen === '') {
+    alert('Completa todos los campos del formulario para agregar un producto');
+    return; // salir de la función si el formulario está vacío
+  }
+
+  // validar el campo nombre
+  if (nombre === '') {
+    alert('Ingresa el nombre del producto');
+    return;
+  }
+
+  if (nombre.length < 3) {
+    alert('Ingresa un nombre de 3 caracteres o más');
+    return;
+  }
+
+  // validar el campo precio
+  if (isNaN(precio) || precio < 0 || precio > 999999) {
+    alert('Ingresa como precio un número de 0 a 999999');
+    return;
+  }
+
+  // validar el campo imagen
+  if (imagen === '') {
+    alert('Ingresa un enlace a la imagen del producto');
+    return;
+  }
+
+  if (!/^(http|https):\/\/[^ "]+$/.test(imagen)) {
+    alert('Ingresa un enlace válido. Ejemplo: https://tuimagen.com/img.png');
+    return;
+  }
+
+  // crear un nuevo objeto producto
+  const nuevoProducto = {
+    id: productos.length + 1, // generar un nuevo ID
+    name: nombre,
+    price: precio,
+    img: imagen
+  };
+
+  // agregar el nuevo producto a la lista
+  productos.push(nuevoProducto);
+
+  // mostrar los productos actualizados
+  mostrarProductos();
+
+  // alertar que el producto ha sido agregado
+  alert('¡Producto agregado!');
+
+  // limpiar el formulario
+  document.querySelector('form').reset();
+}
+// ------------------------------------------------------------------------
+ 
+
+
 
 // función para eliminar un producto
 function eliminarProducto(id) {
@@ -79,9 +151,5 @@ window.addEventListener('DOMContentLoaded', () => {
     })
     .catch(error => console.error('Error al obtener los productos:', error));
 });
-
-
-
-
 
 
