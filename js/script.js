@@ -82,7 +82,7 @@ function agregarProducto(event) {
   }
 
   if (nombre.length < 3) {
-    alert('Ingresa un nombre de tres o más caracteres');
+    alert('Ingresa un nombre de 3 o más caracteres');
     return;
   }
 
