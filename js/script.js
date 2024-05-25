@@ -71,7 +71,7 @@ function agregarProducto(event) {
 
   // validar si el formulario está vacío completamente
   if (nombre === '' && isNaN(precio) && imagen === '') {
-    alert('Completa todos los campos del formulario para agregar un producto');
+    alert('Completa todos los campos para agregar un producto');
     return; // salir de la función si el formulario está vacío
   }
 
@@ -82,7 +82,7 @@ function agregarProducto(event) {
   }
 
   if (nombre.length < 3) {
-    alert('Ingresa un nombre de 3 caracteres o más');
+    alert('Ingresa un nombre de tres o más caracteres');
     return;
   }
 
