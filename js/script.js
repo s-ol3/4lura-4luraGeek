@@ -118,7 +118,7 @@ function agregarProducto(event) {
   mostrarProductos();
 
   // alertar que el producto ha sido agregado
-  alert('¡Producto agregado!');
+  alert('Producto agregado ✔');
 
   // limpiar el formulario
   document.querySelector('form').reset();
