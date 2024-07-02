@@ -19,7 +19,7 @@ Se desarrolla una aplicación para listar, registrar y eliminar productos usando
 #
 
 
-El link es para visualización online y utiliza una fake api en vercel/typicode. Para probar ADD y DELETE consistentemente usar un servidor local (cambiar link una sola vez en js/script.js). Con la fake api los cambios son inestables y temporales. Puede mostrar mensajes de error en alertas y/o consola.
+El link es para visualización online y utiliza una fake api en vercel/typicode. Para probar ADD y DELETE consistentemente usar un servidor local (cambiar link una sola vez en js/script.js). Con la fake api los cambios son inestables y temporales. Puede mostrar mensajes de error en alertas y/o consola, o requerir recarga de la página para ver los cambios.
 
 <br>
 
