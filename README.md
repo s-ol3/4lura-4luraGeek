@@ -15,10 +15,11 @@ Proyecto para el curso "Practicando Front End: Challenge 4luraGeek", de 4lura La
 Se desarrolla una aplicación para listar, registrar y eliminar productos usando Html, Css y JavaScript.
 
 <br>
-<br>
+
+#
 
 
-    El link es para visualización online y utiliza una fake api en vercel/typicode. Para probar ADD y DELETE consistentemente usar un servidor local (cambiar link una sola vez en js/script.js). Con la fake api los cambios son inestables y temporales. Puede mostrar mensajes de error en alertas y/o consola.
+El link es para visualización online y utiliza una fake api en vercel/typicode. Para probar ADD y DELETE consistentemente usar un servidor local (cambiar link una sola vez en js/script.js). Con la fake api los cambios son inestables y temporales. Puede mostrar mensajes de error en alertas y/o consola.
 
 <br>
 
