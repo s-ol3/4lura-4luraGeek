@@ -1,7 +1,6 @@
-:root {
+/* :root {
   --color-grey1: grey;
-
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -209,9 +208,13 @@ span img {
 }
 
 .inputs-form {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
+  justify-content: center; */
+  display: flex;
   justify-content: center;
+  flex-direction: column;
+  max-width: 25em;
 }
 
 .input-name,
@@ -241,6 +244,7 @@ span img {
   margin-top: 9px;
   margin-bottom: 19px;
   width: 100%;
+  min-width: 22em;
 }
 
 .btn-add {
@@ -284,7 +288,7 @@ span img {
 .buttons {
   display: flex;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 120px;
   justify-content: center;
   width: 100%;
 }
@@ -317,9 +321,6 @@ footer p {
 
 
 
-
-
-
 /* '''''''''''''''''''''''' */
 @media (height < 1024px) {
   .container-principal {
@@ -327,14 +328,16 @@ footer p {
     min-height: 60vh;
   }
 }
+
 /* '''''''''''''''''''''''' */
 /* @media (width > 1240px) { */
-  @media only screen and (max-width: 1240px) and (max-height: 1024px) {
+@media only screen and (max-width: 1240px) and (max-height: 1024px) {
   .container-principal {
     height: 55vh;
     min-height: 60vh;
   }
 }
+
 /* '''''''''''''''''''''''' */
 
 
@@ -351,6 +354,7 @@ footer p {
     min-height: fit-content;
     height: 69vh;
   }
+
   /* '''''''''''''''''''''''' */
 
 
@@ -379,7 +383,7 @@ footer p {
 
 
 
-/* scrollbar */
+/* scrollbar .............................*/
 html::-webkit-scrollbar {
   width: 2px;
 }
@@ -393,7 +397,6 @@ html::-webkit-scrollbar-thumb {
   background: #888;
   /*border: 3px solid blue;*/
 }
-
 
 /* estilos personalizados para la barra de desplazamiento en div especifico */
 .container-principal::-webkit-scrollbar {
@@ -426,4 +429,193 @@ body {
   padding: 0;
   height: 100vh;
 }
+
 /* '''''''''''''''''''''''' */
+
+
+
+
+
+
+
+/* validaciones form ................*/
+.error-message{
+  padding: 0em 1.2em;
+  margin: .5em 0;
+}
+
+
+
+/* alertas personalizadas ............*/
+.alert {
+  position: relative;
+  padding: 15px;
+  margin-bottom: 20px;
+  /* border: 1px solid transparent; */
+  /* border-radius: 4px; */
+  font-size: 1.1em;
+  /* font-weight: 900; */
+  
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+/* animacion al entrar y salir */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.alert.success {
+  font-weight: 500;
+  position: fixed;
+  border-radius: 20px;
+  top: 80%;
+  right: 3%;
+  z-index: 5000;
+
+  /* background-color: #3a3d3f;
+  color: #90cddf !important; */
+
+  background-color: #90cddf;
+  color: #3a3d3f !important;
+  border: 3px solid #3a3d3f;
+
+/*   background-color: #000000;
+  color: #ffffff !important;
+   */
+}
+
+.alert.error {
+  font-weight: 500;
+  position: fixed;
+  border-radius: 20px;
+  top: 80%;
+  right: 3%;
+  z-index: 5000;
+  
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+.alert.closing {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+#alert-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 300px;
+}
+
+
+
+
+
+
+/* .alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  z-index: 1000;
+  display: none;
+}
+
+.alert.success {
+  background-color: #4caf50;
+}
+
+.alert.error {
+  background-color: #f44336;
+} */
+
+
+
+
+
+
+
+
+/* 
+.alert {
+  position: relative;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 1.1em;
+  /* animacion al entrar y salir *
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.alert.closing {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+
+.alert.success {
+  background-color: #000000;
+  /* border: 2px solid #4cbd4c; *
+  /* box-shadow: blue 0px 0px 5px 0px; *
+  color: #9f9f9f;
+  position: fixed;
+  border-radius: 20px;
+  top: 80%;
+  right: 3%;
+  z-index: 5000;
+  font-weight: 900;
+}
+
+.alert.error {
+  background-color: #000000;
+  border-color: #c43434;
+  color: #9f9f9f;
+}
+
+.alert p {
+  margin: 0;
+}
+
+#alert-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 300px;
+  
+} */
+
+
+
+
+

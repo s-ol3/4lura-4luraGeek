@@ -45,33 +45,30 @@
     </section>
     <!-- --------------------------------------------------- -->
     <section class="container-formulario">
+      <div id="alert-container"></div> <!-- contenedor para las alertas -->
       <h2>Agregar Producto</h2>
-      <!-- ver validaciones -->
-      <form class="formulario" action="#" method="POST">
+      <form id="formulario" class="formulario" action="#" method="POST">
         <div class="inputs-form">
-          <div>
-            <!-- ---- -->
-            <div class="input-name">
-              <div class="input-box">
-                <input type="text" name="name" placeholder="Nombre del producto..." title="Nombre"
-                  pattern="^[a-zA-ZÀ-ÿ\s]+$" class="input" maxlength="15" required />
-              </div>
+          <div class="input-name">
+            <div class="input-box">
+              <input type="text" name="name" placeholder="Nombre del producto..." title="Nombre"
+                 class="input" maxlength="15"  /> <!-- pattern="^[a-zA-ZÀ-ÿ\s]+$" -->
+              <p class="error-message" id="error-name"></p> <!-- mensaje de error para el nombre -->
             </div>
-            <!-- ---- -->
-            <div class="input-price">
-              <div class="input-box">
-                <input type="text" name="price" placeholder="Precio..." title="Precio" pattern="^\d{1,4}(\.\d)?$"
-                  class="input" maxlength="8" required />
-              </div>
+          </div>
+          <div class="input-price">
+            <div class="input-box">
+              <input type="text" name="price" placeholder="Precio..." title="Precio" 
+                class="input" maxlength="8"  /> <!-- pattern="^\d{1,4}(\.\d)?$" -->
+              <p class="error-message" id="error-price"></p> <!-- mensaje de error para el precio -->
             </div>
-            <!-- ---- -->
-            <div class="input-image">
-              <div class="input-box">
-                <input type="url" name="image" placeholder="Enlace de la imagen..." title="Enlace de la imagen"
-                  class="input" required />
-              </div>
+          </div>
+          <div class="input-image">
+            <div class="input-box">
+              <input type="url" name="image" placeholder="Enlace de la imagen..." title="Enlace de la imagen"
+                class="input"  />
+              <p class="error-message" id="error-image"></p> <!-- mensaje de error para la imagen -->
             </div>
-            <!-- ---- -->
           </div>
         </div>
         <div class="buttons">
@@ -80,6 +77,7 @@
         </div>
       </form>
     </section>
+    
   </main>
 
   <footer>
@@ -92,6 +90,9 @@
       <a class="" href="https://dribbble.com/" target="_blank"><i class="bi bi-dribbble"></i></a>
     </div>
   </footer>
+
+  <!-- mostrar alertas personalizadas -->
+  <div id="alert-container"></div>
 
   <script src="./js/script.js"></script>
 </body>

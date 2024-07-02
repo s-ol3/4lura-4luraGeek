@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Lanzamiento",
+      "price": 300,
+      "img": "https://cdn-icons-png.freepik.com/256/5430/5430795.png"
+    },
+    {
+      "id": 2,
+      "name": "Tiempo",
+      "price": 450,
+      "img": "https://cdn-icons-png.freepik.com/256/5430/5430577.png"
+    },
+    {
+      "id": 3,
+      "name": "Diamante",
+      "price": 500,
+      "img": "https://cdn-icons-png.freepik.com/256/5430/5430064.png"
+    },
+    {
+      "id": 4,
+      "name": "Calendario",
+      "price": 250,
+      "img": "https://cdn-icons-png.freepik.com/256/5430/5430873.png"
+    },
+    {
+      "id": 5,
+      "name": "Idea",
+      "price": 850,
+      "img": "https://cdn-icons-png.freepik.com/256/5430/5430460.png"
+    },
+    {
+      "id": 6,
+      "name": "Ahorro",
+      "price": 650,
+      "img": "https://cdn-icons-png.freepik.com/256/5430/5430274.png"
+    },
+    {
+      "id": 7,
+      "name": "Mail",
+      "price": 150,
+      "img": "https://cdn-icons-png.freepik.com/256/5430/5430507.png"
+    },
+    {
+      "id": 8,
+      "name": "Crecimiento",
+      "price": 250,
+      "img": "https://cdn-icons-png.freepik.com/256/5430/5430072.png"
+    },
+    {
+      "id": 9,
+      "name": "Ojetivo",
+      "price": 550,
+      "img": "https://cdn-icons-png.freepik.com/256/5430/5430921.png"
+    }
+  ]
+}
