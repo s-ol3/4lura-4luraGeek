@@ -1,4 +1,4 @@
-//const productosData = 'http://localhost:4000/products'; 
+//const productosData = 'http://localhost:4000/products'; // 'npm start' para iniciar json server y usar db.json -api local-
 //const productosData = 'https://4lurageek-api.vercel.app/products'; //requiere recarga de pagina, y edita a pesar de los '500 error servidor' en consola y las alertas 'error' rojas, a veces no muestra alertas, delete no muestra alerta, da error en consola, pero borra igual
 //const productosData = 'db.json'; //error cors
 
