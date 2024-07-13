@@ -1,7 +1,10 @@
 //const productosData = 'http://localhost:4000/products'; 
 //const productosData = 'https://4lurageek-api.vercel.app/products'; //requiere recarga de pagina, y edita a pesar de los '500 error servidor' en consola y las alertas 'error' rojas, a veces no muestra alertas, delete no muestra alerta, da error en consola, pero borra igual
-const productosData = 'https://my-json-server.typicode.com/s-ol3/4lura-4lurageek-api-typicode/products'; //funciona add (hasta la siguiente recarga), c alerta, delete hace una simulacion de borrado sobre los datos ya cargados en json, c alerta
 //const productosData = 'db.json'; //error cors
+
+//const productosData = 'https://my-json-server.typicode.com/s-ol3/4lura-4lurageek-api-typicode/products'; //funciona add (hasta la siguiente recarga), c alerta, delete hace una simulacion de borrado sobre los datos ya cargados en json, c alerta
+const productosData = 'https://66920d8526c2a69f6e915c35.mockapi.io/flix/products';  // funciona mejor, sin errores... y mantiene los datos, no como vercel
+
 
 
 
